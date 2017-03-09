@@ -6,16 +6,20 @@ nav {
     /*padding-top: 2px;
     padding-bottom: 2px;*/
     z-index: 10;
-    h1 {
+}
+nav h1 {
         margin-left: 10px;
-    }
-    a {
+}
+nav a {
         font-weight: bold;
-    }
-    a:focus, a:hover {
+}
+nav a:focus, a:hover {
         text-decoration: none;
-    }
-}   
+}  
+
+.brand-logo {
+    padding-top: 8px !important;
+}
 
 #topDivider {
     margin: 25px 0px 25px 0px;
@@ -34,8 +38,8 @@ nav {
     position: relative;
     text-align: right;
     font-family: "Lora", serif;
-      
-    &:after{
+}      
+#jumbotron &:after{
         content: '';
         position: absolute;
         display: block;
@@ -43,10 +47,8 @@ nav {
         height: 100%;
         top: 0;
         left: 0;
-        //background-color: rgba(255,255,222);
-    }
-       
 }
+      
 .parallax-container {
     height: 700px;
 }
@@ -86,19 +88,19 @@ nav {
     padding-bottom: 50px;
 }
 
-
-
-#section2 {
-   
-    .row {
+#section2 .row {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 0px;
-        .col {
-            padding-right: 0px;
-        }
-    }
 }
+#section2 .col {
+            padding-right: 0px;
+}
+
+#section2 .img-responsive {
+        margin:auto;
+}
+
 
 .icons {
     max-height: 75px;
@@ -106,6 +108,10 @@ nav {
 
 .title-hr {
     max-width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
 .applications {
@@ -114,14 +120,18 @@ nav {
 
 #section3 {
     background-color: #fafafa;
-    .row {
+}
+#section3 .row {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 0px;
-        .col {
-            padding-right: 0px;
-        }
-    }
+}
+#section3 .col {
+        padding-right: 0px;
+}
+.sideImg {
+    margin-left: -20px !important;
+    margin-right: 20px !important;
 }
 
 .secPad {
@@ -130,44 +140,39 @@ nav {
  
 #section4 {
     background-color: #fff;   
-    img {
+}
+#section4 img {
         max-height: 350px;
-    }
-    #presentationDiv {
+}
+#section4 #presentationDiv {
         float: left;
         display: block;
-    }
-    .row {
+}
+#section4 .row {
         position: relative;
-    }
-    .row #portraitDiv {
+}
+#section4 #portraitDiv {
         position: absolute;
         bottom: 0;
         right: 0;
-    }
-    #portraitDiv {
-        margin-bottom: -20px;
-        #portrait {
+        margin-bottom: -5px;
+}
+#section4 #portrait {
         position: absolute;
         border: 0px;
         bottom: 0;
-        }
+}
 
-    }
-    #clearDiv {
+#clearDiv {
         clear: both;
-    }
-
+}
+#section5 .row {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
-#section5 {
-    .row {
-        margin-top: 20px;
-    }
-   
-}
-
- .emph {
+.emph {
         font-weight: bold;
     }
 
@@ -178,19 +183,17 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .footer-copyright {
+}
+footer .footer-copyright {
         background-color: transparent;
-    }
-     
 }
 
 footer.page-footer{
     margin-top: 0px;
     background-color: transparent;
-    #contactInfo {
+}
+footer #contactInfo {
         margin-top: 50px;
-    }
-    
 }
 
 #dokos {
