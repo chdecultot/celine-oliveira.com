@@ -68,6 +68,11 @@ nav {
     background-image: url("../images/pattern.jpg");
     background-repeat: repeat;
 }
+
+#error {
+    background-image: url("../images/pattern.jpg");
+    background-repeat: repeat;
+}
     
 #section1, #section3, #section4 {
     padding-top: 20px;

@@ -1,5 +1,5 @@
 ---
 title: Home
-layout: index.jade
+layout: home.jade
 permalink: false
 ---

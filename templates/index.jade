@@ -1,174 +1,125 @@
-extends ./home
+doctype html
+html
 
-block content
-       main        
+        //- HTML HEADER
+        head
+                meta(charset="utf-8")
+                meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                meta(http-equiv="X-UA-Compatible" content="IE=edge")
+                meta(name="description" content="Accompagnement \u00E0 la naissance, gestion du stress, troubles du sommeil, confiance en soi, arrêt du tabac,... Venez b\u00E9n\u00E9ficier\ des bienfaits de l'hypnose pour reprendre le contr\u00F4le de vie")
+                meta(keywords="keywords" content="Hypnose, Grossesse, Tabac, Trouble, Sommmeil, Stress, Confiance en soi")
 
-         #jumbotron.parallax-container.hide-on-small-and-down
-          div.header-quote
-           #headline.h3.brown-text.text-darken-3 "Les gens viennent me voir, je leur raconte une histoire et ils changent"
-           #author.p.brown-text.text-darken-3 M.ERICKSON
-          div.parallax
-           img(src="images/jumbotron-1-fs8.png")
-         
-         #homePage  
-          #section1
-            .container 
-             .col.s12.center-align
-                h2 L'HYPNOSE
-                img(src="images/celine-hypnose-divider.png")
-                br
-                br
-                p C'est un état naturel que l'on retrouve régulièrement au fil de la journée sans même le savoir. 
-                 br
-                 | Est-ce que vous saviez que lorsque vous êtes absorbé dans un film, dans un livre ou tout simplement perdu dans vos pensées, vous êtes en état d'hypnose ?
-                p L'hypnothérapie permet de retrouver cet état de conscience modifiée. 
-                 br
-                 | Lors de la séance, à travers conversations et échanges, vous allez gagner en maîtrise sur vous même. 
-                 br
-                 | Vous êtes donc complètement conscient, actif et en contrôle pendant la séance.
-                 br
-                 br
-                 p: strong L'hypnose se vit plus qu'elle ne s'explique...
+                title= 'Céline Oliveira | Hypnothérapeute à Vanves'
+                link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
-             #triptyqueRow.row
-              .col.s12.m4.center-align
-               img.img-responsive.hide-on-small-and-down(src="images/triptyque_0.png")
-               h4: strong QUI
-               p Toute personne est réceptive à l'état d'hypnose. 
-                br
-                | Il vous suffit d'être motivé et actif!
+                //- Customise the stylesheet for your site by editing /public/styles/site.less
+                //- All .less files will be automatically compiled and minified in production.
+                link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+                link(href="https://fonts.googleapis.com/css?family=Lobster|Lora" rel="stylesheet")
+                link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css")
+                link(href="styles/layout.css", rel="stylesheet")
+                link(href="styles/variables.css", rel="stylesheet")
 
-              .col.s12.m4.center-align
-               img.img-responsive.hide-on-small-and-down(src="images/triptyque_1.png")
-               h4: strong QUAND
-               p A tout moment de la journée, à tout moment de votre vie, dès l'instant où vous l'avez décidé!
 
-              .col.s12.m4.center-align
-               img.img-responsive.hide-on-small-and-down(src="images/triptyque_2.png")
-               h4: strong OÙ
-               p Dans un lieu calme et apaisant. 
-                br
-                |Au cabinet ou à votre domicile.
-
-              
-           #section2
-            .row
-             .col.s6.offset-s3
-              hr.title-hr
-             .col.s12
-              .center-align
-               h2 APPLICATIONS
-               img(src="images/celine-hypnose-divider.png")
-              
-              br
-              .col.s6.m4.center-align.applications
-               img.img-responsive.icons(src="images/quit-smoking.svg")
-               br
-               p Arrêt du Tabac
-               br
-               img.img-responsive.icons(src="images/muscle.svg")
-               br
-               p Confiance en Soi
-               br
-              .col.s6.m4.center-align.applications
-               a(href="/accompagnement-naissance.html"): img.img-responsive.icons(src="images/pregnancy.svg")
-               br
-               p Accompagnement à la Naissance
-               br
-               img.img-responsive.icons(src="images/lotus-position.svg")
-               br
-               p Gestion du Stress
-               br
-              .col.s6.offset-s3.m4.center-align.applications
-               img.img-responsive.icons(src="images/alarm-clock.svg")
-               br
-               p Troubles du Sommeil
-               br
-               img.img-responsive.icons(src="images/popcorn.svg")
-               br
-               p Troubles Alimentaires
-               br
-             .col.s12.applications.center-align
-              br
-              p ET TELLEMENT D'AUTRES ENCORE...
-
-           #section3
-             .row
-              .col.s12.m4
-               img.z-depth-2.img-responsive(src="images/sideImage.jpg")
-              .col.s12.m8.container.center-align.secPad
-               hr.title-hr
-               div
-                h2 DÉROULEMENT DE LA SÉANCE
-                img(src="images/celine-hypnose-divider.png") 
-               br
-               p La séance débute par un entretien qui me permet d'aborder avec vous vos attentes, votre histoire et ensuite de vous accompagner en état d'hypnose pour réaliser les changements que vous désirez.
-               p Durant la séance, vous êtes installé sur un fauteuil mais si vous avez besoin d'être dans une autre position, bouger, ouvrir les yeux, vous êtes totalement libre de vos mouvements.
-               p Pour les femmes enceintes, notamment au dernier trimestre, vous pouvez être allongées confortablement.
-
-               p La séance dure entre 45 min et 1h30.
-
-           #section4
-            .container
-             .row
-              .col.s12.m8.center-align#presentationDiv
-                hr.title-hr
-                div
-                 h2 QUI SUIS-JE ?
-                 img(src="images/celine-hypnose-divider.png")
-                br
-                p Je m'appelle Céline Oliveira et je pratique l'hypnose depuis plusieurs années.
-                p Sage-femme de profession, j'ai découvert l'hypnose dans le milieu hospitalier, notamment pour améliorer la gestion de la douleur et du stress en salle de naissances.
-                 | Devenue passionnée d'hypnose, j'ai continué à me former pour intervenir de façon plus généraliste.
-                p Je suis diplômée de l'Institut Centre France en Hypnose Ericksonienne (ICFHE).
-
-                p De part mon métier, je suis spécialisée en préparation à la naissance et en accompagnement des couples mais l'hypnose est un outil tellement incroyable que je souhaite le partager avec tous ceux qui veulent devenir maître de leur changement.
-              .clearDiv
-              .col.s12.m4#portraitDiv.hide-on-small-and-down
-                img#portraitImg.img-responsive(src="images/celine-hypnose-prod.jpg")
-               
-             
-           #section5
-            .container
-             .row
-              .col.s6.m4
-               ul.center-align.collapsible(data-collapsible="accordion")
-                li
-                 .collapsible-header Horaires
-                 
-                 .collapsible-body
-                  span
-                   ul
-                    li.emph Lundi-Vendredi
-                    li.emph 9h-20h
-                   p Week-End sur Demande
-              .col.s6.m4
-               ul.center-align.collapsible(data-collapsible="accordion")
-                li
-                 .collapsible-header Tarifs
+                //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+                //- Safely remove this block if you are not targeting IE8
+                //-[if lt IE 9]
+                        script(src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js")
+                        script(src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js")
+                //-[endif]
                 
-                 .collapsible-body
-                  span 
-                    ul
-                     li.emph Séance Classique 
-                     li 80€
-                    br
-                    ul
-                     li.emph Arrêt du Tabac
-                     li 90€
-                    br
-                    ul
-                     li.emph Accompagnement à la Naissance
-                     li: a(href="/accompagnement-naissance.html") Tarifs Spécifiques
-              .col.s6.m4
-               ul.center-align.collapsible(data-collapsible="accordion")
-                li
-                 .collapsible-header Réglements
+                //-Google Analytics
+                script.
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                  ga('create', 'UA-93308178-1', 'auto');
+                  ga('send', 'pageview');
+                            
+                            
+
+                //- Include template-specific stylesheets by extending the css block
+                block css
+
+                //- Add any other template-specific HEAD tags by extending the head block
+                block head
+
+        //- HTML BODY
+        body
+
+                //- HEADER
+                #navbar-without
+                 #navbar.navbar-fixed
+                  nav.z-depth-0
+                   .container
+                    .nav-wrapper
+                     
+                     a.brand-logo(href="/"): img.img-circle.img-fluid.d-inline-block.align-top(alt="logo" src="images/logo.png" width="45" height="45")
+                     h5.brand-logo.center.brown-text.hide-on-med-and-down Céline Oliveira Hypnose
+                     ul.tabs-transparent.right.hide-on-med-and-down
+                      li: a.brown-text(href="#contactInfo") Prendre Rendez-Vous
+       
+                     
+                       
+                       
+                      
+
+                      
+
+                //- BODY
+                #body
+
+                        //- The content block should contain the body of your template's content
+                        block content
+
+
+                //- FOOTER
+                footer.page-footer
+                 .container
+                  #contactInfo.row.scrollspy
+                   .col.s12.center
+                     h2.white-text.strong VOUS VOULEZ VIVRE OU REVIVRE L'HYPNOSE ?
+                     br
+                     h4.white-text.strong Appelez-moi au 06.21.60.28.85
+                     h4.white-text.strong ou
+                     h4.white-text.strong Envoyez-moi un email à 
+                      a.white-text.strong(href="mailto:oliveira.celine.sf@gmail.com?subject=Demande%20de%20Rendez-Vous" target="_top") oliveira.celine.sf@gmail.com
+                     br
+                     hr.title-hr
+                     h2.white-text.strong OUVERTURE DU CABINET TRÈS PROCHAINEMENT
+                     p.white-text
+                      |38 RUE GEORGES CLÉMENCEAU
+                      br
+                      |92170 VANVES
+                      br
+                      |FRANCE
+                 .footer-copyright
+                   .center-align.container
+                    - var  year = new Date().getFullYear() 
+                    p © #{year} Céline Oliveira |
+                     | Made with ღ by 
+                     a#dokos(href="https://dokos.io" target="_blank") DOKOS
+
+
+
+                //- JAVASCRIPT
+
+                //- jQuery 1.11.3 is included by default, and required by both Bootstrap
+                //- and the KeystoneJS Content Editor. If you are not targeting IE8,
+                //- you can upgrade to 2.1.4 (also bundled) for better performance.
+                //script(src='/js/jquery/jquery-1.11.3.min.js')
+                script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous")
+
+                //- Customise which Bootstrap javascript files are served by including
+                //- them specifically here, instead of bootstrap-3.3.5.min.js
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous")
                 
-                 .collapsible-body
-                  span
-                   ul
-                    li.emph Chèques
-                    li.emph Espèces
-                    li.emph Lydia
-                    li.emph Pumpkin
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js")
+
+                //- Add scripts that are globally required by your site here.
+                script(src='scripts/main.js')
+
+                //- Include template-specific javascript files by extending the js block
+                block js

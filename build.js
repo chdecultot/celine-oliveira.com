@@ -21,7 +21,7 @@ Metalsmith(__dirname)
     .destination('dist')
     .use(define({
         Site: {
-            url: '',
+            url: 'www.celine-oliveira.com',
             title: 'Céline Oliveira | Hypnothérapeute à Vanves',
             description: "Accompagnement à la naissance, gestion du stress, troubles du sommeil, confiance en soi,... Venez bénéficier des bienfaits de l'hypnose pour reprendre le contrôle de vie"
         },
