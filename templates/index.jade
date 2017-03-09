@@ -1,0 +1,174 @@
+extends ./home
+
+block content
+       main        
+
+         #jumbotron.parallax-container.hide-on-small-and-down
+          div.header-quote
+           #headline.h3.brown-text.text-darken-3 "Les gens viennent me voir, je leur raconte une histoire et ils changent"
+           #author.p.brown-text.text-darken-3 M.ERICKSON
+          div.parallax
+           img(src="images/jumbotron-1-fs8.png")
+         
+         #homePage  
+          #section1
+            .container 
+             .col.s12.center-align
+                h2 L'HYPNOSE
+                img(src="images/celine-hypnose-divider.png")
+                br
+                br
+                p C'est un état naturel que l'on retrouve régulièrement au fil de la journée sans même le savoir. 
+                 br
+                 | Est-ce que vous saviez que lorsque vous êtes absorbé dans un film, dans un livre ou tout simplement perdu dans vos pensées, vous êtes en état d'hypnose ?
+                p L'hypnothérapie permet de retrouver cet état de conscience modifiée. 
+                 br
+                 | Lors de la séance, à travers conversations et échanges, vous allez gagner en maîtrise sur vous même. 
+                 br
+                 | Vous êtes donc complètement conscient, actif et en contrôle pendant la séance.
+                 br
+                 br
+                 p: strong L'hypnose se vit plus qu'elle ne s'explique...
+
+             #triptyqueRow.row
+              .col.s12.m4.center-align
+               img.img-responsive.hide-on-small-and-down(src="images/triptyque_0.png")
+               h4: strong QUI
+               p Toute personne est réceptive à l'état d'hypnose. 
+                br
+                | Il vous suffit d'être motivé et actif!
+
+              .col.s12.m4.center-align
+               img.img-responsive.hide-on-small-and-down(src="images/triptyque_1.png")
+               h4: strong QUAND
+               p A tout moment de la journée, à tout moment de votre vie, dès l'instant où vous l'avez décidé!
+
+              .col.s12.m4.center-align
+               img.img-responsive.hide-on-small-and-down(src="images/triptyque_2.png")
+               h4: strong OÙ
+               p Dans un lieu calme et apaisant. 
+                br
+                |Au cabinet ou à votre domicile.
+
+              
+           #section2
+            .row
+             .col.s6.offset-s3
+              hr.title-hr
+             .col.s12
+              .center-align
+               h2 APPLICATIONS
+               img(src="images/celine-hypnose-divider.png")
+              
+              br
+              .col.s6.m4.center-align.applications
+               img.img-responsive.icons(src="images/quit-smoking.svg")
+               br
+               p Arrêt du Tabac
+               br
+               img.img-responsive.icons(src="images/muscle.svg")
+               br
+               p Confiance en Soi
+               br
+              .col.s6.m4.center-align.applications
+               a(href="/accompagnement-naissance.html"): img.img-responsive.icons(src="images/pregnancy.svg")
+               br
+               p Accompagnement à la Naissance
+               br
+               img.img-responsive.icons(src="images/lotus-position.svg")
+               br
+               p Gestion du Stress
+               br
+              .col.s6.offset-s3.m4.center-align.applications
+               img.img-responsive.icons(src="images/alarm-clock.svg")
+               br
+               p Troubles du Sommeil
+               br
+               img.img-responsive.icons(src="images/popcorn.svg")
+               br
+               p Troubles Alimentaires
+               br
+             .col.s12.applications.center-align
+              br
+              p ET TELLEMENT D'AUTRES ENCORE...
+
+           #section3
+             .row
+              .col.s12.m4
+               img.z-depth-2.img-responsive(src="images/sideImage.jpg")
+              .col.s12.m8.container.center-align.secPad
+               hr.title-hr
+               div
+                h2 DÉROULEMENT DE LA SÉANCE
+                img(src="images/celine-hypnose-divider.png") 
+               br
+               p La séance débute par un entretien qui me permet d'aborder avec vous vos attentes, votre histoire et ensuite de vous accompagner en état d'hypnose pour réaliser les changements que vous désirez.
+               p Durant la séance, vous êtes installé sur un fauteuil mais si vous avez besoin d'être dans une autre position, bouger, ouvrir les yeux, vous êtes totalement libre de vos mouvements.
+               p Pour les femmes enceintes, notamment au dernier trimestre, vous pouvez être allongées confortablement.
+
+               p La séance dure entre 45 min et 1h30.
+
+           #section4
+            .container
+             .row
+              .col.s12.m8.center-align#presentationDiv
+                hr.title-hr
+                div
+                 h2 QUI SUIS-JE ?
+                 img(src="images/celine-hypnose-divider.png")
+                br
+                p Je m'appelle Céline Oliveira et je pratique l'hypnose depuis plusieurs années.
+                p Sage-femme de profession, j'ai découvert l'hypnose dans le milieu hospitalier, notamment pour améliorer la gestion de la douleur et du stress en salle de naissances.
+                 | Devenue passionnée d'hypnose, j'ai continué à me former pour intervenir de façon plus généraliste.
+                p Je suis diplômée de l'Institut Centre France en Hypnose Ericksonienne (ICFHE).
+
+                p De part mon métier, je suis spécialisée en préparation à la naissance et en accompagnement des couples mais l'hypnose est un outil tellement incroyable que je souhaite le partager avec tous ceux qui veulent devenir maître de leur changement.
+              .clearDiv
+              .col.s12.m4#portraitDiv.hide-on-small-and-down
+                img#portraitImg.img-responsive(src="images/celine-hypnose-prod.jpg")
+               
+             
+           #section5
+            .container
+             .row
+              .col.s6.m4
+               ul.center-align.collapsible(data-collapsible="accordion")
+                li
+                 .collapsible-header Horaires
+                 
+                 .collapsible-body
+                  span
+                   ul
+                    li.emph Lundi-Vendredi
+                    li.emph 9h-20h
+                   p Week-End sur Demande
+              .col.s6.m4
+               ul.center-align.collapsible(data-collapsible="accordion")
+                li
+                 .collapsible-header Tarifs
+                
+                 .collapsible-body
+                  span 
+                    ul
+                     li.emph Séance Classique 
+                     li 80€
+                    br
+                    ul
+                     li.emph Arrêt du Tabac
+                     li 90€
+                    br
+                    ul
+                     li.emph Accompagnement à la Naissance
+                     li: a(href="/accompagnement-naissance.html") Tarifs Spécifiques
+              .col.s6.m4
+               ul.center-align.collapsible(data-collapsible="accordion")
+                li
+                 .collapsible-header Réglements
+                
+                 .collapsible-body
+                  span
+                   ul
+                    li.emph Chèques
+                    li.emph Espèces
+                    li.emph Lydia
+                    li.emph Pumpkin

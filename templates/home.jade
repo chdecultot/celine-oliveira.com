@@ -1,0 +1,112 @@
+doctype html
+html
+
+        //- HTML HEADER
+        head
+                meta(charset="utf-8")
+                meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                meta(http-equiv="X-UA-Compatible" content="IE=edge")
+                meta(name="description" content="")
+
+                title= title || 'Céline Oliveira | Hypnothérapeute à Vanves'
+                link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+                //- Customise the stylesheet for your site by editing /public/styles/site.less
+                //- All .less files will be automatically compiled and minified in production.
+                link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+                link(href="https://fonts.googleapis.com/css?family=Lobster|Lora" rel="stylesheet")
+                link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css")
+                link(href="styles/layout.css", rel="stylesheet")
+                link(href="styles/variables.css", rel="stylesheet")
+
+
+                //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+                //- Safely remove this block if you are not targeting IE8
+                //-[if lt IE 9]
+                        script(src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js")
+                        script(src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js")
+                //-[endif]
+
+                //- Include template-specific stylesheets by extending the css block
+                block css
+
+                //- Add any other template-specific HEAD tags by extending the head block
+                block head
+
+        //- HTML BODY
+        body
+
+                //- HEADER
+                #navbar-without
+                 #navbar.navbar-fixed
+                  nav.z-depth-0
+                   .container
+                    .nav-wrapper
+                     
+                     a.brand-logo(href="/"): img.img-circle.img-fluid.d-inline-block.align-top(alt="logo" src="images/logo.png" width="45" height="45")
+                     h5.brand-logo.center.brown-text.hide-on-med-and-down Céline Oliveira Hypnose
+                     ul.tabs-transparent.right.hide-on-med-and-down
+                      li: a.brown-text(href="#contactInfo") Prendre Rendez-Vous
+       
+                     
+                       
+                       
+                      
+
+                      
+
+                //- BODY
+                #body
+
+                        //- The content block should contain the body of your template's content
+                        block content
+
+
+                //- FOOTER
+                footer.page-footer
+                 .container
+                  #contactInfo.row.scrollspy
+                   .col.s12.center
+                     h2.white-text.strong VOUS VOULEZ VIVRE OU REVIVRE L'HYPNOSE ?
+                     br
+                     h4.white-text.strong Appelez-moi au 06.21.60.28.85
+                     h4.white-text.strong ou
+                     h4.white-text.strong Envoyez-moi un email à 
+                      a.white-text.strong(href="mailto:oliveira.celine.sf@gmail.com?subject=Demande%20de%20Rendez-Vous" target="_top") oliveira.celine.sf@gmail.com
+                     br
+                     hr.title-hr
+                     h2.white-text.strong OUVERTURE DU CABINET TRÈS PROCHAINEMENT
+                     p.white-text
+                      |38 RUE GEORGES CLÉMENCEAU
+                      br
+                      |92170 VANVES
+                      br
+                      |FRANCE
+                 .footer-copyright
+                   .center-align.container
+                    - var  year = new Date().getFullYear() 
+                    p © #{year} Céline Oliveira |
+                     | Made with ღ by 
+                     a#dokos(href="https://dokos.io" target="_blank") DOKOS
+
+
+
+                //- JAVASCRIPT
+
+                //- jQuery 1.11.3 is included by default, and required by both Bootstrap
+                //- and the KeystoneJS Content Editor. If you are not targeting IE8,
+                //- you can upgrade to 2.1.4 (also bundled) for better performance.
+                //script(src='/js/jquery/jquery-1.11.3.min.js')
+                script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous")
+
+                //- Customise which Bootstrap javascript files are served by including
+                //- them specifically here, instead of bootstrap-3.3.5.min.js
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous")
+                
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js")
+
+                //- Add scripts that are globally required by your site here.
+                script(src='scripts/main.js')
+
+                //- Include template-specific javascript files by extending the js block
+                block js

@@ -1,0 +1,194 @@
+nav {
+    background-color: transparent;
+    border-color: transparent;
+    background-image: url("../images/pattern.jpg");
+    background-repeat: repeat;
+    /*padding-top: 2px;
+    padding-bottom: 2px;*/
+    z-index: 10;
+    h1 {
+        margin-left: 10px;
+    }
+    a {
+        font-weight: bold;
+    }
+    a:focus, a:hover {
+        text-decoration: none;
+    }
+}   
+
+#topDivider {
+    margin: 25px 0px 25px 0px;
+}
+
+#headline {
+    font-style: italic;
+    font-size: 32px;
+}
+
+#author {
+    font-size: 34px;
+}
+
+#jumbotron {
+    position: relative;
+    text-align: right;
+    font-family: "Lora", serif;
+      
+    &:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        //background-color: rgba(255,255,222);
+    }
+       
+}
+.parallax-container {
+    height: 700px;
+}
+
+.header-quote {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    z-index: 9;
+    padding-right: 40px;
+}
+
+#mainPage {
+    padding: 20px 0px 20px 0px;
+   
+}
+
+#homePage {
+    background-image: url("../images/pattern.jpg");
+    background-repeat: repeat;
+}
+    
+#section1, #section3, #section4 {
+    padding-top: 20px;
+}
+
+#triptyqueRow {
+    margin-top: 80px;
+}
+
+#section1 {
+    padding-bottom: 50px;
+}
+
+
+
+#section2 {
+   
+    .row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        .col {
+            padding-right: 0px;
+        }
+    }
+}
+
+.icons {
+    max-height: 75px;
+}
+
+.title-hr {
+    max-width: 75%;
+}
+
+.applications {
+    font-weight: bold;
+}
+
+#section3 {
+    background-color: #fafafa;
+    .row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        .col {
+            padding-right: 0px;
+        }
+    }
+}
+
+.secPad {
+ padding: 0px 30px 0px 30px !important;
+}
+ 
+#section4 {
+    background-color: #fff;   
+    img {
+        max-height: 350px;
+    }
+    #presentationDiv {
+        float: left;
+        display: block;
+    }
+    .row {
+        position: relative;
+    }
+    .row #portraitDiv {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #portraitDiv {
+        margin-bottom: -20px;
+        #portrait {
+        position: absolute;
+        border: 0px;
+        bottom: 0;
+        }
+
+    }
+    #clearDiv {
+        clear: both;
+    }
+
+}
+
+#section5 {
+    .row {
+        margin-top: 20px;
+    }
+   
+}
+
+ .emph {
+        font-weight: bold;
+    }
+
+footer {
+    background-color: transparent;
+    background-image: url("../images/footer.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footer-copyright {
+        background-color: transparent;
+    }
+     
+}
+
+footer.page-footer{
+    margin-top: 0px;
+    background-color: transparent;
+    #contactInfo {
+        margin-top: 50px;
+    }
+    
+}
+
+#dokos {
+        color: white;
+}
+
